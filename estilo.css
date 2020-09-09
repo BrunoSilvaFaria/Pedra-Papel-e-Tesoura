@@ -121,8 +121,13 @@ header{
  background: url("./images/bg-triangle.svg") no-repeat center;
  background-size: 230px 230px;
     
+/*---Display---*/
+/*     display: none; */
+/*     display: block; */
+    
 /*---Espaçamento---*/
     margin: auto;
+    
 /*---Tamanho---*/
     height: 300px;
     width: 335px;
@@ -133,7 +138,9 @@ header{
 
 /*---Background---*/
     background: #fff;
-    
+
+/*---Cursor---*/
+    cursor: pointer;
 /*---Posicionamento---*/
     position: relative;
     
@@ -173,5 +180,54 @@ header{
     
 /*---Posicionamento---*/
     bottom: 165px;
-    left: 95px;
+    left: 89px;
+}
+
+.jogada__escolhida--conteiner{
+    width: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+.jogada__jogador{
+    width: 200px;
+}
+
+.jogada__titulo{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.jogada__escolhida{
+/*---Bordas---*/
+    border: 20px solid black;
+/*---Tamanho---*/
+    height: 160px;
+    width: 160px;
+}
+
+.jogada__escolhida--icon{
+/*---Espaçamento---*/
+    padding: 50px;
+}
+
+
+.jogada__escolhida--papel{
+/*---Bordas---*/
+    border: 20px solid hsl(230, 89%, 62%);
+}
+
+.jogada__escolhida--tessoura{
+/*---Bordas---*/
+    border: 20px solid  hsl(39, 89%, 49%);
+}
+
+.jogada__escolhida--pedra{
+/*---Bordas---*/
+    border: 20px solid hsl(349, 70%, 56%);
 }
